@@ -1,0 +1,26 @@
+{
+  "name": "@mastermindzh/prettier-config",
+  "version": "1.0.0",
+  "description": "@mastermindzh/prettier-config",
+  "main": "index.js",
+  "scripts": {
+    "patch": "npm --no-git-tag-version version patch",
+    "minor": "npm --no-git-tag-version version minor",
+    "major": "npm --no-git-tag-version version major",
+    "release": "git add -A && git commit -m 'version bump and build' && npm publish --access public && echo 'All done, don't forget to push!'",
+    "release-patch": "npm run patch && npm run release",
+    "release-minor": "npm run minor && npm run release",
+    "release-major": "npm run major && npm run release",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.mastermindzh.tech:mastermindzh/mastermindzh-prettier-config.git"
+  },
+  "keywords": [
+    "prettier",
+    "mastermindzh"
+  ],
+  "author": "Mastermindzh <info@rickvanlieshout.com> (http://rickvanlieshout.com/)",
+  "license": "MIT"
+}
